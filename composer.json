@@ -39,6 +39,14 @@
     ],
     "extra": {
         "composer-exit-on-patch-failure": true,
+        "patches": {
+            "drupal/core": {
+                "ReflectionParameter::getClass": "https://www.drupal.org/files/issues/2020-07-04/3156542-15.patch",
+                "CSRF Token validator": "https://www.drupal.org/files/issues/2020-07-04/3156880-2.patch",
+                "PDO": "https://www.drupal.org/files/issues/2020-09-13/3156881-16.patch",
+                "GDImage": "https://www.drupal.org/files/issues/2020-09-23/3156887-9.patch"
+            }
+        },
         "patchLevel": {
             "drupal/core": "-p2"
         },
