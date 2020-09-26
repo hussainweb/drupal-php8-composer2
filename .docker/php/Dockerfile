@@ -36,6 +36,8 @@ RUN set -eux; \
 		--with-jpeg=/usr \
 	; \
 	\
+	docker-php-source extract; \
+	\
 	docker-php-ext-install -j "$(nproc)" \
 		bcmath \
 		bz2 \
@@ -48,6 +50,30 @@ RUN set -eux; \
 		sockets \
 		zip \
 	; \
+	\
+	git clone https://github.com/krakjoe/apcu.git; \
+	cd apcu; \
+	phpize; ./configure; make; make install; \
+	cd ..; \
+	\
+	git clone https://github.com/phpredis/phpredis.git; \
+	cd phpredis; \
+	phpize; ./configure; make; make install; \
+	cd ..; \
+	\
+	git clone https://github.com/php/pecl-file_formats-yaml.git; \
+	cd pecl-file_formats-yaml; \
+	phpize; ./configure; make; make install; \
+	cd ..; \
+	\
+	docker-php-ext-enable \
+		apcu \
+		redis \
+		yaml \
+	; \
+	\
+	docker-php-source delete; \
+	rm -rf apcu phpredis pecl-file_formats-yamld; \
 	\
 # reset apt-mark's "manual" list so that "purge --auto-remove" will remove all build dependencies
 	apt-mark auto '.*' > /dev/null; \
