@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe882659e073455914990ffb3d67bc31",
+    "content-hash": "92e95227db67c87e58a2696337c2a7ca",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1034,16 +1034,16 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.x-dev",
+            "version": "dev-patch-1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "bba9dabd6306d01a0bda5c952b7eb49778ac88d5"
+                "url": "https://github.com/hussainweb/composer-patches.git",
+                "reference": "22397c86d2049c98116cabc6f75b9622d073e4cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/bba9dabd6306d01a0bda5c952b7eb49778ac88d5",
-                "reference": "bba9dabd6306d01a0bda5c952b7eb49778ac88d5",
+                "url": "https://api.github.com/repos/hussainweb/composer-patches/zipball/22397c86d2049c98116cabc6f75b9622d073e4cd",
+                "reference": "22397c86d2049c98116cabc6f75b9622d073e4cd",
                 "shasum": ""
             },
             "require": {
@@ -1063,7 +1063,11 @@
                     "cweagans\\Composer\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "cweagans\\Composer\\Tests\\": "tests"
+                }
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1075,10 +1079,9 @@
             ],
             "description": "Provides a way to patch Composer packages.",
             "support": {
-                "issues": "https://github.com/cweagans/composer-patches/issues",
-                "source": "https://github.com/cweagans/composer-patches/tree/1.x"
+                "source": "https://github.com/hussainweb/composer-patches/tree/patch-1"
             },
-            "time": "2020-09-10T19:08:26+00:00"
+            "time": "2020-09-12T03:07:19+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
