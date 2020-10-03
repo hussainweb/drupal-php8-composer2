@@ -6,7 +6,7 @@
     "require": {
         "php": ">=7.2",
         "composer/installers": "^1.2",
-        "cweagans/composer-patches": "dev-patch-1",
+        "cweagans/composer-patches": "1.x-dev",
         "drupal/admin_toolbar": "^2.3",
         "drupal/core": "^9.1@dev",
         "drupal/core-composer-scaffold": "^9.1@dev",
@@ -38,10 +38,6 @@
         "sort-packages": true
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:hussainweb/composer-patches.git"
-        },
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
