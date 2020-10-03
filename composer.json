@@ -6,7 +6,6 @@
     "require": {
         "php": ">=7.2",
         "composer/installers": "^1.2",
-        "consolidation/annotated-command": "4.x-dev",
         "cweagans/composer-patches": "dev-patch-1",
         "drupal/admin_toolbar": "^2.3",
         "drupal/core": "^9.1@dev",
