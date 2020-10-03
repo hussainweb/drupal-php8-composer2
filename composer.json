@@ -28,7 +28,8 @@
     },
     "autoload": {
         "files": [
-            "load.environment.php"
+            "load.environment.php",
+            "web/core/includes/class_aliases.php"
         ]
     },
     "minimum-stability": "dev",
@@ -47,13 +48,14 @@
         }
     ],
     "extra": {
-        "composer-exit-on-patch-failure": true,
+        "composer-exit-on-patch-failure": false,
         "patches": {
             "drupal/core": {
-                "ReflectionParameter::getClass": "https://www.drupal.org/files/issues/2020-07-04/3156542-15.patch",
-                "CSRF Token validator": "https://www.drupal.org/files/issues/2020-07-04/3156880-2.patch",
+                "Base patch": "https://www.drupal.org/files/issues/2020-10-03/3156595-base-90.patch",
+                "ReflectionParameter::getClass": "https://www.drupal.org/files/issues/2020-09-30/3156542-27.patch",
                 "PDO": "https://www.drupal.org/files/issues/2020-09-13/3156881-16.patch",
-                "GDImage": "https://www.drupal.org/files/issues/2020-09-23/3156887-9.patch"
+                "GDImage": "https://www.drupal.org/files/issues/2020-09-23/3156887-9.patch",
+                "call_user_func_array": "https://www.drupal.org/files/issues/2020-09-30/3174022-12.patch"
             },
             "drupal/token": {
                 "Install errors": "https://www.drupal.org/files/issues/2020-09-26/3173359-2.patch"
