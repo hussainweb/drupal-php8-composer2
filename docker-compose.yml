@@ -21,5 +21,9 @@ services:
       MARIADB_USER: drupal
       MARIADB_PASSWORD: drupal
 
+  cache:
+    image: redis:6
+    restart: always
+
 volumes:
   data-volume:

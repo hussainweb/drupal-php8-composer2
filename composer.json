@@ -13,6 +13,7 @@
         "drupal/core-composer-scaffold": "^9.1@dev",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/redis": "1.x-dev",
         "drupal/token": "1.x-dev",
         "drush/drush": "10.x-dev",
         "vlucas/phpdotenv": "^5.0"
@@ -59,6 +60,9 @@
             },
             "drupal/token": {
                 "Install errors": "https://www.drupal.org/files/issues/2020-09-26/3173359-2.patch"
+            },
+            "drupal/redis": {
+                "Required Parameters follow optional parameters": "https://www.drupal.org/files/issues/2020-10-03/3174685-2.patch"
             }
         },
         "patchLevel": {
