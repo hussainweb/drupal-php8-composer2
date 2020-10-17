@@ -53,7 +53,7 @@
                 "GDImage": "https://www.drupal.org/files/issues/2020-09-30/3156887-19.patch"
             },
             "drupal/token": {
-                "Install errors": "https://www.drupal.org/files/issues/2020-09-26/3173359-2.patch"
+                "Install errors": "https://www.drupal.org/files/issues/2020-10-17/3173359-6.patch"
             },
             "drupal/redis": {
                 "Required Parameters follow optional parameters": "https://www.drupal.org/files/issues/2020-10-03/3174685-2.patch"
