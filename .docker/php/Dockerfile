@@ -1,4 +1,4 @@
-ARG PHP_VERSION=8.0.0rc1-apache-buster
+ARG PHP_VERSION=8.0.0RC2-apache-buster
 FROM composer:2 AS composer
 
 # from https://www.drupal.org/docs/8/system-requirements/drupal-8-php-requirements

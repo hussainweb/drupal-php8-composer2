@@ -47,11 +47,10 @@
         "composer-exit-on-patch-failure": false,
         "patches": {
             "drupal/core": {
-                "Base patch": "https://www.drupal.org/files/issues/2020-10-03/3156595-base-90.patch",
+                "Base patch": "https://www.drupal.org/files/issues/2020-10-17/3156595-base-102.patch",
                 "ReflectionParameter::getClass": "https://www.drupal.org/files/issues/2020-09-30/3156542-27.patch",
                 "PDO": "https://www.drupal.org/files/issues/2020-09-13/3156881-16.patch",
-                "GDImage": "https://www.drupal.org/files/issues/2020-09-23/3156887-9.patch",
-                "call_user_func_array": "https://www.drupal.org/files/issues/2020-09-30/3174022-12.patch"
+                "GDImage": "https://www.drupal.org/files/issues/2020-09-30/3156887-19.patch"
             },
             "drupal/token": {
                 "Install errors": "https://www.drupal.org/files/issues/2020-09-26/3173359-2.patch"
